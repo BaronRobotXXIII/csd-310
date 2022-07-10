@@ -19,6 +19,8 @@ url = "mongodb+srv://admin:admin@cluster0.gp8u6ok.mongodb.net/test"
 client = MongoClient(url)
 db = client.pytech
 
+print("-- INSERT STATEMENTS --")
+
 thorin_doc_id = db.students.insert_one(thorin).inserted_id
 print(f"Inserted student record Thorin Oakenshield into the students collection with document_id {thorin_doc_id}")
 
